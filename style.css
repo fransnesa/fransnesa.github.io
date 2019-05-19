@@ -1,0 +1,151 @@
+.menu {
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0px 10px;
+	padding-bottom: 10px;
+}
+
+.intro{
+display: inline-block;
+width: 100%;
+}
+
+.col h1{
+position: relative;
+top: 70px;
+left: 280px;
+}
+
+.col p{
+position: relative;
+top: 70px;
+left: 280px;
+}
+
+.col img{
+position: relative;
+display: flex;
+width: 200px;
+height: 200px;
+top: 20px;
+left: 320px;
+transform: rotate(-90deg);
+border-radius: 50%;
+}
+
+.col{
+position: relative;
+display: inline-block;
+}
+
+header{
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    opacity: 0.75;
+    width: 100%;
+	box-shadow:  0 0 0 .5px rgba(0, 0, 1, .4);
+}
+
+ul {
+    display: inline;
+    padding: 25px 75px;
+}
+
+li {
+    color: black;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    display: inline;
+    width: 80px;
+    margin: 20px;  
+}
+
+.btn {
+  position: relative;
+  border: bold;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  top: 70px;
+  left: 280px;
+}
+
+.project:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.blog:hover {
+  background: #2196F3;
+  color: white;
+}
+
+a {
+    color: Black;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background:black;
+    text-align: center;
+}
+
+footer p {
+	margin-top: 30px;
+    font-family: arial;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    text-align: center;
+}
+
+.content .sad{
+margin-top: 50px;	
+margin-left: 500px;
+margin-right: 500px;
+position: relative;
+width:280px;
+height:280px;
+}
+
+.content .sadtext{
+position: relative;
+margin-top: 30px;	
+margin-left: 200px;
+}
+
+.content .title{
+text-align: center;
+}
+
+.content .gambar{
+margin-left: 500px;
+margin-right: 500px;
+position: relative;
+}
+
+.content .isi{
+text-align: center;
+}
+
+
