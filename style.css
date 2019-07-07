@@ -1,151 +1,113 @@
-.menu {
-    height: auto;
-    margin: auto;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.menu ul {
+* {
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+  }
 
-.menu ul li {
-    display: inline-block;
-    margin: 0px 10px;
-	padding-bottom: 10px;
+.headline{
+display:  flex;
+align-items: center;
+transform : translate(40%, 100%);
+color: white;
 }
-
-.intro{
-display: inline-block;
-width: 100%;
-}
-
-.col h1{
-position: relative;
-top: 70px;
-left: 280px;
-}
-
-.col p{
-position: relative;
-top: 70px;
-left: 280px;
-}
-
-.col img{
-position: relative;
-display: flex;
-width: 200px;
-height: 200px;
-top: 20px;
-left: 320px;
-transform: rotate(-90deg);
-border-radius: 50%;
-}
-
-.col{
-position: relative;
-display: inline-block;
-}
-
-header{
-    background-size: cover;
-    position: relative;
-    margin: 0;
-    opacity: 0.75;
-    width: 100%;
-	box-shadow:  0 0 0 .5px rgba(0, 0, 1, .4);
-}
-
-ul {
-    display: inline;
-    padding: 25px 75px;
-}
-
-li {
-    color: black;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    display: inline;
-    width: 80px;
-    margin: 20px;  
-}
-
-.btn {
-  position: relative;
-  border: bold;
-  background-color: inherit;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  display: inline-block;
-  top: 70px;
-  left: 280px;
-}
-
-.project:hover {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.blog:hover {
-  background: #2196F3;
-  color: white;
-}
-
-a {
-    color: Black;
-}
-
-footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    background:black;
-    text-align: center;
-}
-
-footer p {
-	margin-top: 30px;
-    font-family: arial;
-    font-size: 14px;
-    text-align: center;
+  
+  .app {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .time-select,
+  .sound-picker {
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
+  .time-select button,
+  .sound-picker button {
     color: white;
-    text-align: center;
-}
+    width: 30%;
+    height: 10%;
+    background: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: all 0.5s ease;
+  }
 
-.content .sad{
-margin-top: 50px;	
-margin-left: 500px;
-margin-right: 500px;
-position: relative;
-width:280px;
-height:280px;
-}
+  .play:hover{
+    transform: scale(1.1);
+  }
 
-.content .sadtext{
-position: relative;
-margin-top: 30px;	
-margin-left: 200px;
-}
+  .sound-picker button:nth-child(1):hover{
+    background: black;
+  }
 
-.content .title{
-text-align: center;
-}
-
-.content .gambar{
-margin-left: 500px;
-margin-right: 500px;
-position: relative;
-}
-
-.content .isi{
-text-align: center;
-}
-
-
+  .sound-picker button:nth-child(2):hover{
+    background: black;
+  }
+  
+  .sound-picker button {
+    border: none;
+    height: 120px;
+    width: 120px;
+    padding: 30px;
+    border-radius: 50%;
+  }
+  .sound-picker button:nth-child(1) {
+    background: #4972a1;
+  }
+  .sound-picker button:nth-child(2) {
+    background: #a14f49;
+  }
+  .sound-picker button img {
+    height: 100%;
+  }
+  
+  .time-select button:hover {
+    background: white;
+    color: black;
+  }
+  
+  .player-container {
+    position: relative;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .player-container svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+  }
+  .player-container svg circle {
+    transition: all 0.2s ease-in-out;
+  }
+  .time-display {
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    bottom: 10%;
+  }
+  
+  video {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -10;
+  }
+  
